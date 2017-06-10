@@ -1,0 +1,12 @@
+iff -urN movit-1.3.2/Makefile.in movit-1.3.2-patched/Makefile.in
+--- movit-1.3.2/Makefile.in     2016-02-24 05:47:29.000000000 +0800
++++ movit-1.3.2-patched/Makefile.in     2016-10-05 22:48:43.849761195 +0800
+@@ -93,7 +93,7 @@
+ LIB_OBJS=effect_util.o util.o effect.o effect_chain.o init.o resource_pool.o fp16.o ycbcr.o $(INPUTS:=.o) $(EFFECTS:=.o)
+ 
+ # Default target:
+-all: libmovit.la $(TESTS)
++all: libmovit.la
+
+ ifeq ($(with_demo_app),yes)
+ all: demo
