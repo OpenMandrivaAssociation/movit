@@ -1,10 +1,10 @@
-%define major 6
+%define major 7
 %define libname %mklibname %{name} %{major}
 %define devname %mklibname %{name} -d
 
 Summary:	High-performance, high-quality video filters for the GPU
 Name:		movit
-Version:	1.5.1
+Version:	1.5.2
 Release:	1
 License:	GPLv2+
 Group:		Video
@@ -67,11 +67,11 @@ Development files for %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
+%apply_patches
 
 %build
 ./autogen.sh
-%configure
+CXXFLAGS="%{optflags} -std=gnu++1z" %configure
 %make
 
 %install
