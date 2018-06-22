@@ -1,10 +1,10 @@
-%define major 7
+%define major 8
 %define libname %mklibname %{name} %{major}
 %define devname %mklibname %{name} -d
 
 Summary:	High-performance, high-quality video filters for the GPU
 Name:		movit
-Version:	1.5.3
+Version:	1.6.2
 Release:	1
 License:	GPLv2+
 Group:		Video
@@ -30,6 +30,7 @@ for video filters.
 %files
 %doc NEWS README
 %dir %{_datadir}/%{name}/
+%{_datadir}/%{name}/*.comp
 %{_datadir}/%{name}/*.frag
 %{_datadir}/%{name}/*.vert
 
