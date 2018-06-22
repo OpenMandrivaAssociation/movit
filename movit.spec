@@ -16,8 +16,8 @@ BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(epoxy)
 BuildRequires:	pkgconfig(libpng)
-BuildRequires:	pkgconfig(sdl)
-BuildRequires:	pkgconfig(SDL_image)
+BuildRequires:	pkgconfig(sdl2)
+BuildRequires:	pkgconfig(SDL2_image)
 BuildRequires:	pkgconfig(x11)
 
 %description
