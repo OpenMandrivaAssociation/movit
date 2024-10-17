@@ -9,7 +9,7 @@ Version:	1.6.3
 Release:	3
 License:	GPLv2+
 Group:		Video
-Url:		http://movit.sesse.net/
+Url:		https://movit.sesse.net/
 Source0:	http://movit.sesse.net/%{name}-%{version}.tar.gz
 Patch0:		movit-1.3.2-disable-tests.patch
 BuildRequires:	pkgconfig(eigen3)
