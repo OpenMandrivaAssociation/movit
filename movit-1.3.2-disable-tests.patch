@@ -1,7 +1,7 @@
---- movit-1.5.2/Makefile.in.orig	2017-08-09 22:37:21.139230303 +0200
-+++ movit-1.5.2/Makefile.in	2017-08-09 22:37:36.344443738 +0200
-@@ -93,7 +93,7 @@ TESTS=effect_chain_test fp16_test $(TEST
- LIB_OBJS=effect_util.o util.o effect.o effect_chain.o init.o resource_pool.o ycbcr.o $(INPUTS:=.o) $(EFFECTS:=.o)
+--- movit-1.7.1/Makefile.in.og	2025-08-04 09:35:41.454469555 -0400
++++ movit-1.7.1/Makefile.in	2025-08-04 09:36:24.107474846 -0400
+@@ -92,7 +92,7 @@
+ LIB_OBJS=effect_util.o util.o effect.o effect_chain.o init.o resource_pool.o ycbcr.o bundled_shaders.o $(INPUTS:=.o) $(EFFECTS:=.o)
  
  # Default target:
 -all: libmovit.la $(TESTS)
