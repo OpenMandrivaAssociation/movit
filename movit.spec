@@ -5,8 +5,8 @@
 
 Summary:	High-performance, high-quality video filters for the GPU
 Name:		movit
-Version:	1.6.3
-Release:	3
+Version:	1.7.1
+Release:	1
 License:	GPLv2+
 Group:		Video
 Url:		https://movit.sesse.net/
@@ -29,11 +29,6 @@ Movit aims to be a high-quality, high-performance, open-source library
 for video filters.
 
 %files
-%doc NEWS README
-%dir %{_datadir}/%{name}/
-%{_datadir}/%{name}/*.comp
-%{_datadir}/%{name}/*.frag
-%{_datadir}/%{name}/*.vert
 
 #----------------------------------------------------------------------------
 
@@ -46,6 +41,7 @@ Requires:	%{name}
 Shared library for %{name}.
 
 %files -n %{libname}
+%doc NEWS README
 %{_libdir}/libmovit.so.%{major}*
 
 #----------------------------------------------------------------------------
