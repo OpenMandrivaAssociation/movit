@@ -12,6 +12,7 @@ Group:		Video
 Url:		https://movit.sesse.net/
 Source0:	http://movit.sesse.net/%{name}-%{version}.tar.gz
 Patch0:		movit-1.3.2-disable-tests.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(eigen3)
 BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(fftw3)
