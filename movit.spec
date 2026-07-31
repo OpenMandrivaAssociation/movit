@@ -5,7 +5,7 @@
 
 Summary:	High-performance, high-quality video filters for the GPU
 Name:		movit
-Version:	1.7.1
+Version:	1.7.2
 Release:	1
 License:	GPLv2+
 Group:		Video
